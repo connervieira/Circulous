@@ -62,12 +62,12 @@ class ViewController: NSViewController {
                 Circumference.doubleValue = (2 * Double.pi) * Radius.doubleValue // c = 2pi * r
             }
             if (AreaFilled == true) { // Calculations to run given the area of a circle
-                Circumference.doubleValue = 2 * (Double.pi*Area.doubleValue).squareRoot()
-                Radius.doubleValue = 2 * ((Double.pi*Area.doubleValue).squareRoot()) / (2 * Double.pi)
+                Circumference.doubleValue = 2 * (Double.pi * Area.doubleValue).squareRoot() // c = 2 * sqrt(pi * a)
+                Radius.doubleValue = 2 * ((Double.pi * Area.doubleValue).squareRoot()) / (2 * Double.pi) // r = (2 * sqrt(pi * a)) / (2 * pi)
             }
             if (CircumferenceFilled == true) { // Calculations to run given the circumference of a circle
-                Area.doubleValue = (Circumference.doubleValue * Circumference.doubleValue) / (4 * Double.pi)
-                Radius.doubleValue = Circumference.doubleValue / (2 * Double.pi)
+                Area.doubleValue = (Circumference.doubleValue * Circumference.doubleValue) / (4 * Double.pi) // a = c^2
+                Radius.doubleValue = Circumference.doubleValue / (2 * Double.pi) // r = c / 2 * pi
             }
         }
     }
